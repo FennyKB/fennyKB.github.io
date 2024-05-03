@@ -2,7 +2,7 @@
 
 Planning to buy a new house or that dream car but need financial assistance? Bank loans can be a lifesaver. Understanding bank loans and borrowing habits is vital for making well-informed decisions. In this blog post, we'll delve into insights from a dataset containing information about financial loans using Tableau, an exceptional data visualization tool.
 Here is the link to the Dashboard
-https://public.tableau.com/app/profile/fenny.khosla8067/viz/BankLoansReport/Dashboard4
+[Tableau Link](https://public.tableau.com/app/profile/fenny.khosla8067/viz/BankLoansReport/Dashboard4)
 
 [<img src="images/Navigating_Financial_Data_Dashboard.png?raw=true"/>](https://public.tableau.com/app/profile/fenny.khosla8067/viz/BankLoansReport/Dashboard4)
 
