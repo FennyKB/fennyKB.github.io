@@ -33,7 +33,8 @@ SELECT date, total_cases, total_deaths
 FROM "CovidDeathsD"
 WHERE location = 'United States' AND total_deaths > 0;
 ```
- 
+
+<img src="images/Covid19_Postgres/Picture1.jpg">
 
 2. **Total % of deaths out of the entire population in the US**
 ```
@@ -41,7 +42,9 @@ SELECT (CAST(MAX(total_deaths) AS double precision) / AVG(CAST(population AS dou
 FROM "CovidDeathsD"
 WHERE location = 'United States';
 ```
- 
+
+<img src="images/Covid19_Postgres/Picture2.jpg">
+
 3. **Total % of deaths out of the entire population for all locations**
 ```   
 SELECT location, (CAST(MAX(total_deaths) AS double precision) / AVG(CAST(population AS double precision)) * 100) AS percentage 
@@ -50,6 +53,8 @@ GROUP BY location
 HAVING (CAST(MAX(total_deaths) AS double precision) / AVG(CAST(population AS double precision))) IS NOT NULL
 ORDER BY percentage DESC;
 ``` 
+
+<img src="images/Covid19_Postgres/Picture3.jpg">
 
 4. **Country with the highest deaths as a % of population**
 ``` 
@@ -60,6 +65,8 @@ GROUP BY location
 ORDER BY percentage DESC
 LIMIT 1;
 ```
+
+<img src="images/Covid19_Postgres/Picture4.jpg">
  
 5. **Country with seventh highest deaths as a % of population**
 ```
@@ -77,7 +84,9 @@ Select location, Percentage_LocationsDeaths, Rank_LocationDeaths
 from Rank_Percentage 
 where Rank_LocationDeaths = 7 and Percentage_LocationsDeaths>0;
 ```
- 
+
+<img src="images/Covid19_Postgres/Picture5.jpg">
+
 6. **Country with third highest deaths as a % of population**
 ```
 Select location,(cast(max(total_deaths) as double precision)/avg(cast(population as double precision))*100) as percentage 
@@ -87,7 +96,9 @@ group by location
 order by percentage desc
 limit 1
 offset 2;
-``` 
+```
+
+<img src="images/Covid19_Postgres/Picture6.jpg">
 
 7. **Total % of covid +ve cases - in the US**
 ```
@@ -97,7 +108,9 @@ from "CovidDeathsD"
 where location like '%United States%' AND location <> 'United States Virgin Islands'
 Group by location;
 ```
- 
+
+<img src="images/Covid19_Postgres/Picture7.jpg">
+
 8. **Continent wise +ve cases**
 ```
 Select location, sum(total_cases) as Positive_Cases
@@ -105,7 +118,9 @@ from "CovidDeathsD"
 where continent is NULL
 Group by location
 order by Positive_Cases DESC;
-``` 
+```
+
+<img src="images/Covid19_Postgres/Picture8.jpg">
 
 9. **Continent wise deaths**
 ```
@@ -114,14 +129,18 @@ from "CovidDeathsD"
 where continent is null
 group by location
 order by Continent_Deaths DESC;
-``` 
+```
+
+<img src="images/Covid19_Postgres/Picture9.jpg">
 
 10. **Daily new cases vs hospitalizations vs icu_patients - US**
 ```
 Select date, location, new_cases, hosp_patients, icu_patients
 from "CovidDeathsD"
 where location like '%United States%';
-``` 
+```
+
+<img src="images/Covid19_Postgres/Picture10.jpg">
 
 11. **Country wise total cases and diabetes prevalence**
 ```
@@ -134,7 +153,9 @@ and "CovidDeathsD".date = "CovidVaccinationsV".date
 where "CovidDeathsD".continent is not null 
 group by Country
 ;
-``` 
+```
+
+<img src="images/Covid19_Postgres/Picture11.jpg">
 
 ## Conclusion:
 This portfolio project showcases my proficiency in data analysis using PostgreSQL. Through rigorous analysis and utilization of SQL functionalities, I provided actionable insights into COVID-19 trends and metrics. The project highlights my technical skills and ability to derive meaningful conclusions from complex datasets, essential for data-driven decision-making.
