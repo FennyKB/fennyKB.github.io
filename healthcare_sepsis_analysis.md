@@ -1,5 +1,6 @@
 # Healthcare: Analysis of Sepsis Patient Demographics and ICU resource Utilization
 [<img src="images/Healthcare_Sepsis_Analysis.jpg?raw=true"/>](https://public.tableau.com/app/profile/fenny.khosla8067/viz/PatientSepsisDataAnalysisDashboard/Dashboard32)
+[Tableau Link](https://public.tableau.com/app/profile/fenny.khosla8067/viz/PatientSepsisDataAnalysisDashboard/Dashboard32)
 
 # Introduction: 
 This project aims to analyze data related to patients suffering from Sepsis, a severe condition where the body's response to infection improperly affects several organs. The goal is to gain insights into patient distribution based on age and gender, and to analyze ICU requirements to aid in planning care for patients.
