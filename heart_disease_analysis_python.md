@@ -19,7 +19,7 @@ The dataset contains information about 302 patients, with 14 columns, each repre
 •	thal: A blood disorder called thalassemia (3 = normal, 6 = fixed defect, 7 = reversible defect).
 •	target: Heart disease (0 = no, 1 = yes).
 
-
+[<img src="images/Picture1.jpg?raw=true"/>]
 *Figure shows shape of the dataset before removing duplicates
 
 
