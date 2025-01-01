@@ -1,5 +1,4 @@
 # Coffee Shop Sales Analysis: January to June 2023
-[<img src="images/Healthcare_Sepsis_Analysis.jpg?raw=true"/>]
 
 # Introduction: 
 This project entails a comprehensive analysis of a coffee shop's sales data over the first six months of 2023, covering January through June. The dataset includes 149,116 rows and 11 columns with key details such as transaction ID, date, time, quantity, store location, product specifics, and more. My objective is to draw meaningful insights from this data to guide strategic business decisions for my client using PostgreSQL.
@@ -43,11 +42,16 @@ PostgreSQL Queries with results:
 --Total Sales
 Select sum(transaction_qty*unit_price) as Total_Sales from coffeeshop_sales;
 
+[<img src="images/Picture1c.jpg?raw=true"/>]
+
 
 --Total Orders
+[<img src="images/Picture2c.jpg?raw=true"/>]
 
 
 --Total Quantity Sold
+[<img src="images/Picture3c.jpg?raw=true"/>]
+
 
 --Calculate the total sales for each respective month
 Select extract(month from transaction_date) as Month_Final, 
@@ -55,6 +59,7 @@ sum(transaction_qty*unit_price) as Total_Sales
 from coffeeshop_sales
 Group by extract(month from transaction_date);
 
+[<img src="images/Picture4c.jpg?raw=true"/>]
 
 
 -- --Determine the month-on-month increase or decrease in sales
@@ -74,6 +79,7 @@ where Previous_MonthSales is not null
 )
 Select * from t2;
 
+[<img src="images/Picture5c.jpg?raw=true"/>]
 
 
 -- Calculate the total number of orders for each respective month
@@ -83,6 +89,7 @@ from coffeeshop_sales
 group by extract(month from transaction_date)
 ;
 
+[<img src="images/Picture6c.jpg?raw=true"/>]
 
 
 
@@ -104,6 +111,7 @@ where Previous_MonthOrders is not null
 )
 Select * from t2;
 
+[<img src="images/Picture7c.jpg?raw=true"/>]
 
 
 
@@ -121,6 +129,7 @@ where extract(month from transaction_date) in (3,4)
 group by extract(month from transaction_date)
 ;
 
+[<img src="images/Picture8c.jpg?raw=true"/>]
 
 
 
@@ -132,6 +141,7 @@ from coffeeshop_sales
 group by extract(month from transaction_date)
 ;
 
+[<img src="images/Picture9c.jpg?raw=true"/>]
 
 
 
@@ -146,6 +156,7 @@ group by extract(month from transaction_date)
 order by Month_Final
 ;
 
+[<img src="images/Picture10c.jpg?raw=true"/>]
 
 
 
@@ -166,6 +177,7 @@ from
  ) as t1
 ;
 
+[<img src="images/Picture11c.jpg?raw=true"/>]
 
 
 
@@ -181,6 +193,7 @@ coffeeshop_sales
 where extract(month from transaction_date) = '5'
 group by WeekDay_Status;
 
+[<img src="images/Picture12c.jpg?raw=true"/>]
 
 
 
@@ -193,6 +206,7 @@ from coffeeshop_sales
 Group by store_location
 Order by Total_Sales DESC;
 
+[<img src="images/Picture13c.jpg?raw=true"/>]
 
 
 
@@ -205,3 +219,4 @@ group by product_type
 order by Total_Sales DESC
 limit 10;
 
+[<img src="images/Picture14c.jpg?raw=true"/>]
