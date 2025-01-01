@@ -2,6 +2,7 @@
 
 # Introduction: 
 Heart disease is one of the leading causes of death worldwide. It is influenced by several factors such as hypertension, diabetes, unhealthy lifestyles, and genetic predisposition. Understanding the relationship between various health metrics and heart disease can aid in early detection, treatment, and prevention. This project presents an exploratory data analysis of a heart disease dataset using Python, primarily focusing on key features that might indicate a higher risk of heart disease.
+(<br>)
 # Dataset Overview: 
 The dataset contains information about 302 patients, with 14 columns, each representing various health metrics. Here's a quick overview of the columns:
 •	age: The person’s age in years.
