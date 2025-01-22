@@ -46,11 +46,12 @@ Select sum(transaction_qty*unit_price) as Total_Sales from coffeeshop_sales;
 
 <img src="images/Picture1c.jpg?raw=true"/>
 <br>
-Total Orders <br>
+Total Orders
+
 ```
-Select count(transaction_id) as Total_Orders
-from coffeeshop_sales;
+Select count(transaction_id) as Total_Orders from coffeeshop_sales;
 ```
+
 <img src="images/Picture2c.jpg?raw=true"/>
 <br>
 
