@@ -9,6 +9,8 @@ The analysis shows a higher incidence of sepsis in patients aged 54-72 and over 
 
 ## Retail: Coffee Shop Sales Analysis with PostgresSQL
 
+[<img src="images/coffeesales.jpg?raw=true\">](./coffee_shop_sales_sql.md)
+
 This project involves an in-depth analysis of a coffee shop's sales data over the first six months of 2023, providing actionable insights and strategic recommendations. 
 Total Sales
 - Total: $698.81k
