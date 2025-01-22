@@ -7,7 +7,7 @@ The project aims to analyze data related to patients suffering from Sepsis, a se
 
 The analysis shows a higher incidence of sepsis in patients aged 54-72 and over 72. ICU data reveal critical care needs for older patients and a significant proportion of onset patients. Patients are distributed across MICU, SICU, and other ICUs, with MICU and SICU needing to handle both non-sepsis and sepsis cases. ICU length of stay (ICULOS) analysis indicates that onset patients have an average ICULOS of 59.4 days compared to 39 days for all patients, with median values of 48 and 39 days, respectively, suggesting that some onset patients with very long stays are skewing the average.
 
-## Retail: Coffee Shop Sales Analysis with PostgresSQL
+## Food and Beverage: Coffee Shop Sales Analysis with PostgresSQL
 
 [<img src="images/coffeesales.jpg?raw=true\">](./coffee_shop_sales_sql.md)
 
@@ -37,7 +37,7 @@ Staffing Adjustments
 Product-Specific Focus
 - Promote high-performing products, such as Barista Espresso, to boost sales further.
 
-## Navigating Financial Data with Tableau
+## Financial Services: Navigating Financial Data with Tableau
 [<img src="images/Navigating_Financial_Data_Dashboard.png?raw=true\">](./navigating_financial_data.md)
 
 This project leverages Tableau to analyze bank loan data, focusing on key performance indicators (KPIs) such as total loan applications, funded amounts, and payments received. By calculating month-to-date (MTD) and month-on-month (MoM) changes, it provides insights into financial trends. Good and bad loans are distinguished, with KPIs calculated for both categories. Visualizations include a donut chart for loan health, an area chart for month-wise metrics, and state-wise geographic insights. Additionally, loan distributions by term, purpose, and employee tenure are examined. The analysis aids stakeholders in making informed financial decisions and understanding borrowing habits.
