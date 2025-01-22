@@ -30,12 +30,11 @@ Recommendations
 Targeted Promotions
 - Implement weekday promotions to sustain the higher sales trend.
 - Introduce weekend-specific offers to drive more traffic and balance sales across the week.
-
 Staffing Adjustments
 - Optimize staffing levels to handle higher weekday demand and ensure seamless customer service during peak hours.
-
 Product-Specific Focus
 - Promote high-performing products, such as Barista Espresso, to boost sales further.
+
 
 ## Financial Services: Navigating Financial Data with Tableau
 [<img src="images/Navigating_Financial_Data_Dashboard.png?raw=true\">](./navigating_financial_data.md)
