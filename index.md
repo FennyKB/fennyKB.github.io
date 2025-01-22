@@ -48,6 +48,7 @@ This project leverages Tableau to analyze bank loan data, focusing on key perfor
 Harnessing the power of data analytics, this project delved into a Sales Dataset using Tableau, focusing on key metrics such as total sales, profit, and quantity for the year 2022. The analysis revealed significant year-on-year growth, with total sales reaching $733.2k, profit at $93.44k, and quantity at 12k units. Visualizations, including a Hex Map and Sunburst Chart, highlighted geographical sales distributions and sub-category contributions, identifying California and New York as top performers. State-wise and monthly performance analyses provided actionable insights for strategic decision-making, underscoring the effectiveness of Tableau's dynamic calculation and visualization capabilities in exploring sales dynamics.
 
 ## Exploring Heart Disease Dataset: A deep dive into key features with Python
+[Link Here](./heart_disease_analysis_python.md)
 
 Heart disease is one of the leading causes of death worldwide. It is influenced by several factors such as hypertension, diabetes, unhealthy lifestyles, and genetic predisposition. This project presents an exploratory data analysis of a heart disease dataset using Python, primarily focusing on key features that might indicate a higher risk of heart disease.
 Findings include: 
