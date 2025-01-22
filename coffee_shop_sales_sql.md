@@ -38,35 +38,33 @@ Strategic Recommendations:
 -	Product Strategy: Focus on promoting high-selling products such as Barista Espresso to boost overall sales.
 By leveraging these insights, my client can make informed decisions to drive growth and optimize operations in her coffee shops. 
 
-PostgreSQL Queries with results:
---Total Sales
+PostgreSQL Queries with results: <br>
+Total Sales
 ```
 Select sum(transaction_qty*unit_price) as Total_Sales from coffeeshop_sales;
-
 ```
 
+<img src="images/Picture1c.jpg?raw=true"/>
 <br>
-[<img src="images/Picture1c.jpg?raw=true"/>]
-
-<br>
---Total Orders
+Total Orders <br>
 ```
-Select sum(transaction_id) as Total_Orders from coffeeshop_sales;
+Select count(transaction_id) as Total_Orders
+from coffeeshop_sales
+;
 ```
 <br>
-[<img src="images/Picture2c.jpg?raw=true"/>]
+<img src="images/Picture2c.jpg?raw=true"/>
 <br>
 
---Total Quantity Sold
+Total Quantity Sold
 ```
 Select sum(transaction_qty) as Total_Qty from coffeeshop_sales;
-
 ```
 <br>
-[<img src="images/Picture3c.jpg?raw=true"/>]
+<img src="images/Picture3c.jpg?raw=true"/>
 <br>
 
---Calculate the total sales for each respective month <br>
+Calculate the total sales for each respective month <br>
 ```
 Select extract(month from transaction_date) as Month_Final, 
 sum(transaction_qty*unit_price) as Total_Sales
@@ -75,10 +73,10 @@ Group by extract(month from transaction_date);
 ```
 
 <br>
-[<img src="images/Picture4c.jpg?raw=true"/>]
+<img src="images/Picture4c.jpg?raw=true"/>
 <br>
 
---Determine the month-on-month increase or decrease in sales <br>
+Determine the month-on-month increase or decrease in sales <br>
 ```
 With t1 as
 (Select extract(month from transaction_date) as Month_Final, 
@@ -97,10 +95,10 @@ where Previous_MonthSales is not null
 Select * from t2;
 ```
 <br>
-[<img src="images/Picture5c.jpg?raw=true"/>]
+<img src="images/Picture5c.jpg?raw=true"/>
 
 <br>
--- Calculate the total number of orders for each respective month <br>
+Calculate the total number of orders for each respective month <br>
 ```
 Select extract(month from transaction_date) as Month_Final, 
 count(transaction_id) as Total_Orders
@@ -109,10 +107,10 @@ group by extract(month from transaction_date)
 ;
 ```
 <br>
-[<img src="images/Picture6c.jpg?raw=true"/>]
+<img src="images/Picture6c.jpg?raw=true"/>
 <br>
 
--- Determine the month-on-month increase or decrease in orders <br>
+Determine the month-on-month increase or decrease in orders <br>
 ```
 With t1 as
 (Select 
@@ -133,10 +131,10 @@ Select * from t2;
 ```
 
 <br>
-[<img src="images/Picture7c.jpg?raw=true"/>]
+<img src="images/Picture7c.jpg?raw=true"/>
 <br>
 
---Calculate the difference in the number of orders between the selected month and the previous month <br>
+Calculate the difference in the number of orders between the selected month and the previous month <br>
 ```
 Select extract(month from transaction_date) as Final_Date,
 count(transaction_id) as Total_Orders,
@@ -150,10 +148,10 @@ group by extract(month from transaction_date)
 ;
 ```
 <br>
-[<img src="images/Picture8c.jpg?raw=true"/>]
+<img src="images/Picture8c.jpg?raw=true"/>
 <br>
 
---Total Quantity Sold over the months <br>
+Total Quantity Sold over the months <br>
 ```
 Select extract(month from transaction_date) as Month_Final,
 sum(transaction_qty) as Total_Qty
@@ -163,10 +161,10 @@ group by extract(month from transaction_date)
 ```
 
 <br>
-[<img src="images/Picture9c.jpg?raw=true"/>]
+<img src="images/Picture9c.jpg?raw=true"/>
 <br>
 
--- total quantity sold KPI - MOM difference and MOM growth  <br>
+Total quantity sold KPI - MOM difference and MOM growth  <br>
 ```
 Select extract(month from transaction_date) as Month_Final,
 sum(transaction_qty) as Total_Qty,
@@ -179,11 +177,11 @@ order by Month_Final
 ```
 
 <br>
-[<img src="images/Picture10c.jpg?raw=true"/>]
+<img src="images/Picture10c.jpg?raw=true"/>
 
 <br>
 
--- Consider day of month (1, 2, ...31) and see if daily sales more or less than average sales for a given month <br>
+Consider day of month (1, 2, ...31) and see if daily sales more or less than average sales for a given month <br>
 ```
 Select DOW,
 case 
@@ -202,11 +200,11 @@ from
 ```
 
 <br>
-[<img src="images/Picture11c.jpg?raw=true"/>]
+<img src="images/Picture11c.jpg?raw=true"/>
 
 <br>
 
---Sales by weekday/weekend for the month of May  <br>
+Sales by weekday/weekend for the month of May  <br>
 ```
 Select 
 case 
@@ -221,11 +219,11 @@ group by WeekDay_Status;
 ```
 
 <br>
-[<img src="images/Picture12c.jpg?raw=true"/>]
+<img src="images/Picture12c.jpg?raw=true"/>
 
 <br>
 
---Sales by store location  <br>
+Sales by store location  <br>
 ```
 Select 
 store_location,
@@ -235,10 +233,10 @@ Group by store_location
 Order by Total_Sales DESC;
 ```
 <br>
-[<img src="images/Picture13c.jpg?raw=true"/>]
+<img src="images/Picture13c.jpg?raw=true"/>
 <br>
 
---Sales by Products (Top 10)  <br>
+Sales by Products (Top 10)  <br>
 ```
 Select product_type,
 sum(transaction_qty*unit_price) as Total_Sales
@@ -249,5 +247,5 @@ limit 10;
 ```
 
 <br>
-[<img src="images/Picture14c.jpg?raw=true"/>]
+<img src="images/Picture14c.jpg?raw=true"/>
 <br>
