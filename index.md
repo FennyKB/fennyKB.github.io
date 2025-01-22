@@ -27,12 +27,9 @@ Weekday vs. Weekend Sales
 - Actionable Insight: This trend can guide targeted weekday promotions and weekend sales strategies.
 
 Recommendations
-Targeted Promotions
 - Implement weekday promotions to sustain the higher sales trend.
 - Introduce weekend-specific offers to drive more traffic and balance sales across the week.
-Staffing Adjustments
 - Optimize staffing levels to handle higher weekday demand and ensure seamless customer service during peak hours.
-Product-Specific Focus
 - Promote high-performing products, such as Barista Espresso, to boost sales further.
 
 
