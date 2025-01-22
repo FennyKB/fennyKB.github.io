@@ -70,7 +70,7 @@ from coffeeshop_sales
 Group by extract(month from transaction_date);
 ```
 
-<img src="images/Picture4c.jpg?raw=true"/>
+<img src="images/Picture4c.png?raw=true"/>
 <br>
 
 Determine the month-on-month increase or decrease in sales <br>
