@@ -1,12 +1,5 @@
 # My Projects
 
-## Healthcare: Sepsis Patient Data Analysis (Using Tableau)
-[<img src="images/Healthcare_Sepsis_Analysis.jpg?raw=true\">](./healthcare_sepsis_analysis.md)
-
-The project aims to analyze data related to patients suffering from Sepsis, a severe condition where the body's response to infection improperly affects several organs. The goal is to gain insights into patient distribution based on age and gender, and to analyze ICU requirements to aid in planning care for patients.
-
-The analysis shows a higher incidence of sepsis in patients aged 54-72 and over 72. ICU data reveal critical care needs for older patients and a significant proportion of onset patients. Patients are distributed across MICU, SICU, and other ICUs, with MICU and SICU needing to handle both non-sepsis and sepsis cases. ICU length of stay (ICULOS) analysis indicates that onset patients have an average ICULOS of 59.4 days compared to 39 days for all patients, with median values of 48 and 39 days, respectively, suggesting that some onset patients with very long stays are skewing the average.
-
 ## Food and Beverage: Coffee Shop Sales Analysis with PostgresSQL
 
 [<img src="images/coffeesales.jpg?raw=true\">](./coffee_shop_sales_sql.md)
