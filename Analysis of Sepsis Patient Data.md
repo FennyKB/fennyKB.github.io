@@ -1,8 +1,6 @@
 # Healthcare: Analysis of Sepsis Patient Demographics and ICU resource Utilization
 
-[Tableau Link](https://public.tableau.com/app/profile/fenny.khosla8067/viz/PatientSepsisDataAnalysisDashboard/Dashboard32)
-
-[<img src=images/Healthcare_Sepsis_Analysis.jpg?raw=true"/>](https://public.tableau.com/app/profile/fenny.khosla8067/viz/PatientSepsisDataAnalysisDashboard/Dashboard32)
+[<img src="images/Healthcare_Sepsis_Analysis.jpg?raw=true"/>](https://public.tableau.com/app/profile/fenny.khosla8067/viz/PatientSepsisDataAnalysisDashboard/Dashboard32)
 
  
 # Introduction to Dataset and Analysis:
